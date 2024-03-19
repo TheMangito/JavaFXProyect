@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="464.0" prefWidth="469.0" styleClass="anchor-pane" stylesheets="@styles.css" type="AnchorPane" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="buyButton" layoutX="46.0" layoutY="389.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="160.0" styleClass="article-buy-button" text="Buy" />
+      <Button fx:id="learnMore" layoutX="221.0" layoutY="383.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="227.0" styleClass="article-info" text="Learn More &gt;" />
+      <Label fx:id="title" layoutX="57.0" layoutY="225.0" prefHeight="86.0" prefWidth="359.0" styleClass="article-text-Design" />
+      <ImageView fx:id="imageView" fitHeight="179.0" fitWidth="227.0" layoutX="123.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="costLabel" layoutX="78.0" layoutY="311.0" prefHeight="59.0" prefWidth="314.0" styleClass="article-cost" text="Label" />
+   </children>
+</fx:root>

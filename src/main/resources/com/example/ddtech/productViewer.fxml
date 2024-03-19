@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: #121212" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ddtech.ProductViewerController">
+    <children>
+        <AnchorPane layoutY="8.0" prefHeight="1072.0" prefWidth="1920.0">
+            <children>
+                <ScrollPane fx:id="scrollPane" layoutX="-6.0" layoutY="104.0" prefHeight="964.0" prefWidth="1926.0">
+                    <content>
+                        <AnchorPane fx:id="scrollAnchorPane" minHeight="0.0" minWidth="0.0" prefHeight="1080.0" prefWidth="1909.0">
+                            <children>
+                                <Label fx:id="title" layoutX="881.0" layoutY="92.0" prefHeight="78.0" prefWidth="684.0" styleClass="categories-title-design-invert" text="Titulo" />
+                                <ImageView fx:id="image" fitHeight="462.0" fitWidth="643.0" layoutX="145.0" layoutY="92.0" />
+                                <Label fx:id="description" layoutX="881.0" layoutY="207.0" prefHeight="222.0" prefWidth="779.0" styleClass="categories-title-design-invert" text="Descripcion" />
+                                <Label fx:id="price" layoutX="932.0" layoutY="451.0" prefHeight="74.0" prefWidth="291.0" styleClass="categories-title-design-invert" text="Precio" />
+                                <Button fx:id="buy" layoutX="1240.0" layoutY="462.0" prefHeight="52.0" prefWidth="270.0" styleClass="article-buy-button" text="Agregar Al carrito" />
+                                <Label fx:id="stock" layoutX="1001.0" layoutY="540.0" prefHeight="38.0" prefWidth="192.0" styleClass="article-info" text="Stock" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </ScrollPane>
+                <AnchorPane layoutY="53.0" prefHeight="52.0" prefWidth="1920.0" styleClass="background-Color, aligment" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="53.0">
+                    <children>
+                        <Button fx:id="home" layoutX="421.0" layoutY="3.0" maxHeight="41.0" maxWidth="92.0" minHeight="34" minWidth="76.0" mnemonicParsing="false" onAction="#home" prefHeight="41.0" prefWidth="76.0" styleClass="menu-title" text="Home" AnchorPane.leftAnchor="421.0" AnchorPane.topAnchor="3.0" />
+                        <Button layoutX="537.0" layoutY="3.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="115.0" styleClass="menu-title" text="PC Builder" AnchorPane.leftAnchor="537.0" AnchorPane.rightAnchor="1268.0" AnchorPane.topAnchor="3.0" />
+                        <Button layoutX="1279.0" layoutY="2.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="41.0" prefWidth="88.0" styleClass="menu-title" text="Support" AnchorPane.leftAnchor="1279.0" AnchorPane.rightAnchor="553.0" AnchorPane.topAnchor="2.0" />
+                        <Button fx:id="categories" layoutX="688.0" layoutY="2.0" mnemonicParsing="false" onAction="#categories" prefHeight="41.0" prefWidth="104.0" styleClass="menu-title" text="Categories" AnchorPane.leftAnchor="688.0" AnchorPane.rightAnchor="1128.0" AnchorPane.topAnchor="2.0" />
+                        <TextField layoutX="810.0" layoutY="7.0" prefHeight="31.0" prefWidth="443.0" styleClass="text-field" visible="false" AnchorPane.leftAnchor="810.0" AnchorPane.rightAnchor="667.0" AnchorPane.topAnchor="7.0" />
+                        <ImageView fitHeight="31.0" fitWidth="30.0" layoutX="1394.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true" styleClass="button-hovers" AnchorPane.leftAnchor="1394.0" AnchorPane.rightAnchor="496.0" AnchorPane.topAnchor="9.0">
+                            <image>
+                                <Image url="@../../../videos/lupa.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="24.0" fitWidth="31.0" layoutX="1446.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" styleClass="button-hovers" AnchorPane.leftAnchor="1446.0" AnchorPane.rightAnchor="450.0" AnchorPane.topAnchor="12.0">
+                            <image>
+                                <Image url="@../../../videos/carrito-de-compras.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="1499.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" styleClass="button-hovers" AnchorPane.leftAnchor="1499.0" AnchorPane.rightAnchor="397.0" AnchorPane.topAnchor="12.0">
+                            <image>
+                                <Image url="@../../../videos/usuario.png" />
+                            </image>
+                        </ImageView>
+                        <Button fx:id="cart" layoutX="1434.0" layoutY="6.0" mnemonicParsing="false" onAction="#cart" prefHeight="41.0" prefWidth="48.0" styleClass="button-transparent" />
+                    </children>
+                </AnchorPane>
+            </children></AnchorPane>
+        <AnchorPane fx:id="categoriesMenu" layoutY="103.0" prefHeight="196.0" prefWidth="1920.0" styleClass="category-menu-color" visible="false">
+            <children>
+                <Button fx:id="storage" layoutX="494.0" layoutY="37.0" mnemonicParsing="false" onAction="#storage" prefHeight="34.0" prefWidth="139.0" styleClass="categories-design" text="Storage" />
+                <Button fx:id="power" layoutX="494.0" layoutY="83.0" mnemonicParsing="false" onAction="#power" prefHeight="34.0" prefWidth="139.0" styleClass="categories-design" text="Power Supplies" />
+                <Button fx:id="motherboards" layoutX="494.0" layoutY="131.0" mnemonicParsing="false" onAction="#motherboards" prefHeight="34.0" prefWidth="139.0" styleClass="categories-design" text="Motherboards" />
+                <Button fx:id="cases" layoutX="685.0" layoutY="35.0" mnemonicParsing="false" onAction="#cases" prefHeight="34.0" prefWidth="139.0" styleClass="categories-design" text="Computer Cases" />
+                <Button fx:id="cpus" layoutX="685.0" layoutY="84.0" mnemonicParsing="false" onAction="#cpus" prefHeight="34.0" prefWidth="139.0" styleClass="categories-design" text="Processors/CPUs" />
+                <Button fx:id="graphic" layoutX="685.0" layoutY="133.0" mnemonicParsing="false" onAction="#graphic" prefHeight="34.0" prefWidth="139.0" styleClass="categories-design" text="Graphic Cards" />
+                <Button fx:id="monitors" layoutX="908.0" layoutY="35.0" mnemonicParsing="false" onAction="#monitors" prefHeight="34.0" prefWidth="139.0" styleClass="categories-design" text="Monitors" />
+                <Button fx:id="cooling" layoutX="908.0" layoutY="83.0" mnemonicParsing="false" onAction="#cooling" prefHeight="34.0" prefWidth="139.0" styleClass="categories-design" text="Cooling" />
+                <Button fx:id="memory" layoutX="908.0" layoutY="133.0" mnemonicParsing="false" onAction="#memory" prefHeight="34.0" prefWidth="139.0" styleClass="categories-design" text="Computer Memory" />
+                <Button fx:id="laptops" layoutX="1132.0" layoutY="30.0" mnemonicParsing="false" onAction="#laptops" prefHeight="34.0" prefWidth="139.0" styleClass="categories-design" text="Laptops" />
+                <Button fx:id="cellphones" layoutX="1132.0" layoutY="75.0" mnemonicParsing="false" onAction="#cellphones" prefHeight="34.0" prefWidth="139.0" styleClass="categories-design" text="Cellphones" />
+            </children></AnchorPane>
+
+    </children>
+</AnchorPane>

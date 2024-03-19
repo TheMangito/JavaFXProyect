@@ -1,0 +1,206 @@
+.background-Color{
+    -fx-background-color: rgba(29, 29, 29, 0.8)
+}
+.background-Blue-color{
+    -fx-background-color: #1765bd
+}
+
+.aligment{
+    -fx-alignment: center;
+}
+
+.menu-title{
+    -fx-background-color: rgba(0, 0, 0, 0);
+    -fx-text-fill: #b6b6b6;
+    -fx-font-size: 15px;
+    -fx-font-family: "SF Pro Text Light";
+}
+.menu-title:hover{
+    -fx-text-fill: #efefef;
+    -fx-scale-x: 1.1px;
+    -fx-scale-y: 1.1px;
+}
+
+.text-field{
+    -fx-background-color: rgba(0, 0, 0, 0);
+    -fx-text-fill: #b6b6b6;
+    -fx-font-size: 12px;
+    -fx-font-family: "SF Pro Text Light";
+    -fx-border-width: 1px;
+    -fx-border-color: #393939;
+    -fx-border-radius: 30px;
+}
+.category-color{
+    -fx-background-color: #333333;
+    -fx-text-fill: white;
+    -fx-alignment: center;
+}
+
+.button-hovers{
+    -fx-background-color: rgba(0, 0, 0, 0);
+}
+.button-hovers:hover{
+    -fx-scale-x: 1.1px;
+    -fx-scale-y: 1.1px;
+}
+.category-menu-color{
+    -fx-background-color: #1b1b1b;
+}
+.button-next-video{
+    -fx-background-color: rgba(1, 1, 1, 0);
+    -fx-text-fill: #b6b6b6;
+    -fx-font-size: 50px;
+    -fx-font-family: "SF Pro Text Bold";
+
+}
+.button-next-video:hover{
+    -fx-background-color: rgba(1, 1, 1, 0.35);
+    -fx-text-fill: #e9e9e9;
+    -fx-font-size: 60px;
+    -fx-font-family: "SF Pro Text Bold";
+}
+.categories-design{
+    -fx-text-fill: #e2e2e2;
+    -fx-font-size: 14px;
+    -fx-background-color: rgba(245, 245, 245, 0.02);
+    -fx-border-color: transparent transparent #f8f8f8 transparent;
+    -fx-border-width: 2px;
+}
+.categories-design:hover{
+    -fx-scale-x: 1.1px;
+    -fx-scale-y: 1.1px;
+    -fx-border-color: transparent transparent #317ea9 transparent;
+}
+.text-title{
+    -fx-font-family: "SF Pro Text Bold";
+    -fx-text-fill: #e7e7e7;
+    -fx-font-size: 70px;
+    -fx-effect: dropshadow(gaussian, rgb(23, 23, 23), 3.2, 1.3, 1, 1);
+    -fx-alignment: center;
+}
+.button-design {
+    -fx-font-family: "SF Pro Text Bold";
+    -fx-font-size: 30px;
+    -fx-effect: dropshadow(gaussian, rgb(37, 37, 37), 1.2, 0.2, 1, 1);
+    -fx-background-color: linear-gradient(#e5e5e5, #f1f1f1);
+    -fx-background-radius: 35;
+    -fx-text-fill: #161616;
+    -fx-border-color: transparent;
+}
+.text-Subtitle{
+    -fx-font-family: "SF Pro Text Bold";
+    -fx-text-fill: #e7e7e7;
+    -fx-font-size: 30px;
+    -fx-effect: dropshadow(gaussian, rgb(23, 23, 23), 1.2, 0.7, 1, 1);
+    -fx-alignment: center;
+}
+.text-Subtitle:hover{
+    -fx-underline: true;
+}
+
+.button-design:hover{
+    -fx-background-color: linear-gradient(#acacac, #a8a8a8);
+}
+.slider{
+    -fx-pref-width: 100px;
+}
+.slider .track{
+    -fx-background-color: linear-gradient(to left, cyan, magenta);
+    -fx-background-radius: 0;
+}
+.slider .thumb {
+    -fx-pref-width: 10px;
+    -fx-pref-height: 30px;
+}
+.button-transparent{
+    -fx-background-color: rgba(0, 0, 0, 0);
+}
+.text-bond{
+    -fx-font-family: "SF Pro Text Bold";
+    -fx-text-fill: #101010;
+    -fx-font-size: 60px;
+    -fx-effect: dropshadow(gaussian, rgb(44, 44, 44), 1.2, 0.7, 1, 1);
+    -fx-alignment: center;
+}
+.anchor-pane{
+    -fx-background-radius: 50px;
+    -fx-background-color: rgb(255, 255, 255);
+    -fx-border-radius: 50px;
+    -fx-effect: dropshadow(gaussian, rgb(45, 45, 45), 22, 0.15, 1, 1);
+}
+.article-buy-button{
+    -fx-font-family: "SF Pro Text Bold";
+    -fx-font-size: 25px;
+    -fx-effect: dropshadow(gaussian, rgb(45, 45, 45), 1.2, 0.2, 1, 1);
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #0f0f0f, #1a1a1a, #141414);
+    -fx-background-radius: 35;
+    -fx-text-fill: #f8f9fb;
+}
+.article-buy-button:hover{
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #242424, rgba(41, 41, 41, 0.91), #252525);
+    -fx-scale-x: 1.1px;
+    -fx-scale-y: 1.1px;
+}
+.article-text-Design{
+    -fx-font-family: "SF Pro Text Medium";
+    -fx-font-size: 20px;
+    -fx-text-fill: #3a3a3f;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+}
+.article-info{
+    -fx-font-family: "SF Pro Text Medium";
+    -fx-font-size: 26px;
+    -fx-text-fill: #222222;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+    -fx-background-color: rgba(0, 0, 0, 0);
+}
+.article-info:hover{
+    -fx-underline: true;
+    -fx-scale-x: 1.1px;
+    -fx-scale-y: 1.1px;
+}
+.article-cost{
+    -fx-font-family: "SF Pro Text Light";
+    -fx-font-size: 15px;
+    -fx-text-fill: #242424;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+    -fx-background-color: rgba(0, 0, 0, 0);
+}
+.categories-design-black{
+    -fx-text-fill: #e2e2e2;
+    -fx-font-size: 14px;
+    -fx-background-color: rgba(0, 0, 0, 0);
+    -fx-border-color: transparent transparent #f8f8f8 transparent;
+    -fx-border-width: 2px;
+}
+.categories-design-black:hover{
+    -fx-border-color: transparent transparent #317ea9 transparent;
+}
+.categories-title-design{
+    -fx-font-family: "SF Pro Text Bond";
+    -fx-text-fill: #e2e2e2;
+    -fx-font-size: 30px;
+    -fx-background-color: rgba(30, 30, 30, 0);
+    -fx-border-color: transparent transparent #f8f8f8 transparent;
+    -fx-border-width: 2px;
+}
+.categories-title-design-invert{
+    -fx-font-family: "SF Pro Text Bond";
+    -fx-text-fill: #171717;
+    -fx-font-size: 50px;
+    -fx-background-color: rgba(30, 30, 30, 0);
+    -fx-effect: dropshadow(gaussian, rgb(40, 40, 40), 1.2, 0.2, 1, 1);
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+
+}
+.categories-title-design-invert2{
+    -fx-font-family: "SF Pro Text Bond";
+    -fx-text-fill: #171717;
+    -fx-font-size: 30px;
+    -fx-background-color: rgba(30, 30, 30, 0);
+    -fx-effect: dropshadow(gaussian, rgb(40, 40, 40), 1.2, 0.2, 1, 1);
+}
